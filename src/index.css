@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background-color: #F5F6F4;
+  color: #263238;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F6F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9DEDF;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #78909C;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid #D9DEDF;
+}
+
+.badge-success {
+  background-color: rgba(95, 128, 104, 0.15);
+  color: #5F8068;
+  border: 1px solid rgba(95, 128, 104, 0.3);
+}
+
+.badge-warning {
+  background-color: rgba(169, 130, 74, 0.15);
+  color: #A9824A;
+  border: 1px solid rgba(169, 130, 74, 0.3);
+}
+
+.badge-error {
+  background-color: rgba(166, 93, 93, 0.15);
+  color: #A65D5D;
+  border: 1px solid rgba(166, 93, 93, 0.3);
+}
+
+.badge-teal {
+  background-color: rgba(79, 138, 137, 0.15);
+  color: #4F8A89;
+  border: 1px solid rgba(79, 138, 137, 0.3);
+}
